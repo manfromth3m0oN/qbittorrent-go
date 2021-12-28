@@ -13,14 +13,14 @@ func SearchCriteriaMarshalTest(t *testing.T) {
 	offset := 1
 	hashes := []string{"12398546dfg", "sdkjfgy278"}
 	searchCriteria := &SearchCriteria{
-		filter:   &filter,
+		Filter:   &filter,
 		Category: &category,
-		tag:      &tag,
-		sort:     &sort,
-		reverse:  false,
-		limit:    &limit,
-		offset:   &offset,
-		hashes:   &hashes,
+		Tag:      &tag,
+		Sort:     &sort,
+		Reverse:  false,
+		Limit:    &limit,
+		Offset:   &offset,
+		Hashes:   &hashes,
 	}
 
 	marshaledText := searchCriteria.Marshal()
